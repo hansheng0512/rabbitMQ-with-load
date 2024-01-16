@@ -36,7 +36,7 @@ async function main() {
             console.log(`General task received: ${message}`);
             setTimeout(() => {
                 console.log(`General task completed: ${message}`);
-                channelPDF.ack(msg!);
+                channelGeneral.ack(msg!);
             }, 5000); // Adjust time as needed
         }, { noAck: false });
 
